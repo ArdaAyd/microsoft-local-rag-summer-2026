@@ -10,6 +10,8 @@ evaluated separately against ground-truth question sets, and every design decisi
 rejected) because it moved a number. Ten experiments, including four honestly-reported negative
 results, are written up in **[docs/EXPERIMENTS.md](docs/EXPERIMENTS.md)**.
 
+![The Streamlit interface answering a question using only the documents, with the source document, section and page cited.](docs/assets/ui.png)
+
 ## Architecture
 
 ```mermaid
@@ -154,13 +156,6 @@ Realistic-phrasing accuracy (~70%) is the main weakness; the ranking headroom is
 recall is 96%) but the only remaining lever — an in-domain fine-tuned reranker — is out of scope.
 The answer-quality set is small and substring-scored. The 7B model is ~27 s/answer and memory is
 tight on 16 GB. Full discussion in [docs/EXPERIMENTS.md](docs/EXPERIMENTS.md#known-limitations--honesty-notes).
-
-## Roadmap
-
-- [x] **Core** (plan Phase 1–2): ingestion, retrieval, LLM integration, citations, "I don't know"
-- [x] **Evaluation** (plan Phase 3): retrieval & answer-quality sets, 10 experiments, this documentation
-- [x] **UI:** Streamlit app
-- [ ] **Final presentation** (plan Phase 3): demo + slides
 
 ## Project structure
 
