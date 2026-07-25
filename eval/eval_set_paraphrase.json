@@ -1,0 +1,28 @@
+{
+  "_aciklama": "eval_set.json'un PARAPHRASE varyanti. gold_doc ve keywords BIREBIR AYNI; sadece sorularin ifadesi degisti. Sorular kasitli olarak dokumanin kendi terimlerini KULLANMIYOR (gercek kullanici nasil sorardiysa oyle). Amac: 'eval iyimser mi?' sorusunu olcmek ve hybrid aramanin katkisini gorunur kilmak. Tek degisken = ifade.",
+  "questions": [
+    {"q": "Yolda aniden önüme çıkan hareketli cisimler için ne yapmam gerekiyor?", "gold_doc": "Sartname", "keywords": ["Dinamik engel", "Dinamik Engeller"]},
+    {"q": "Araç çizgiyi ne kadar aşarsa ceza alır?", "gold_doc": "Sartname", "keywords": ["Şerit ihlali", "2 tekerlek"]},
+    {"q": "Ön ve arka tekerlekler arasındaki mesafe en az ne kadar olmalı?", "gold_doc": "Sartname", "keywords": ["Dingil Açıklığı"]},
+    {"q": "Yarışmanın yapılacağı alan nasıl bir yer?", "gold_doc": "Sartname", "keywords": ["Yarışma Pisti", "Parkur"]},
+    {"q": "Kapalı geçitten geçerken ne yapmalıyım?", "gold_doc": "Sartname", "keywords": ["Tünel"]},
+    {"q": "Aracı dışarıdan durdurabilmek için ne gerekiyor?", "gold_doc": "Sartname", "keywords": ["Uzaktan Müdahale", "UMS"]},
+    {"q": "Trafik lambası konusunda uyulması gereken kural nedir?", "gold_doc": "Sartname", "keywords": ["Işık Kurallarına Uyum", "Kırmızı ışık", "Kırmızı Işık"]},
+    {"q": "Yolda duran sabit cisimlerden nasıl kaçınmalıyım?", "gold_doc": "Sartname", "keywords": ["Statik Engel"]},
+    {"q": "Araca nasıl gaz veririm, hangi mesajı yayınlamam gerek?", "gold_doc": "KullaniciDokumani", "keywords": ["RC_THRT_DATA"]},
+    {"q": "Geri giderken yanan lambayı nasıl kontrol ederim?", "gold_doc": "KullaniciDokumani", "keywords": ["RC_ReverseLight"]},
+    {"q": "Tekerlekleri sol tarafa çevirmek için hangi değeri göndermeliyim?", "gold_doc": "KullaniciDokumani", "keywords": ["Direksiyonu Sola"]},
+    {"q": "Araçtaki bilgisayara uzaktan nasıl bağlanırım?", "gold_doc": "KullaniciDokumani", "keywords": ["SSH", "SFTP"]},
+    {"q": "Hazırladığım konteyner imajını araçtaki bilgisayara nasıl kopyalarım?", "gold_doc": "KullaniciDokumani", "keywords": ["Docker Image Yapısının", "SFTP ile Advantech"]},
+    {"q": "Aracı kumandayla nasıl sürerim?", "gold_doc": "KullaniciDokumani", "keywords": ["Joystick"]},
+    {"q": "Kullanacağımız aracın genel özellikleri neler?", "gold_doc": "GenelBilgilendirme", "keywords": ["BEE1", "TEKNİK ÖZELLİKLER"]},
+    {"q": "Direksiyonu elektronik olarak hangi birim çeviriyor?", "gold_doc": "GenelBilgilendirme", "keywords": ["EPS Motor Control", "ELEKTRİK ŞEMASI"]},
+    {"q": "Aracın en, boy ve yükseklik ölçüleri ne kadar?", "gold_doc": "GenelBilgilendirme", "keywords": ["BOYUTLAR ve GÖRÜNÜM", "BEE1"]},
+    {"q": "Araçta sinyal lambası donanımı mevcut mu?", "gold_doc": "GenelBilgilendirme", "keywords": ["LED pozisyon"]},
+    {"q": "Araçta hangi bilgisayar kullanılıyor?", "gold_doc": "Mimari", "keywords": ["MIC-770"]},
+    {"q": "Yazılım hangi parçalardan oluşuyor, nasıl bölünmüş?", "gold_doc": "Mimari", "keywords": ["ROS node mimarisi", "Yazılım Katmanları"]},
+    {"q": "Derinlik algılayabilen kamera hakkında ne bilgi var?", "gold_doc": "Mimari", "keywords": ["Stereo Kamera"]},
+    {"q": "Lazer tarayıcının kaç kanalı var ve nasıl ölçüm yapıyor?", "gold_doc": "Mimari", "keywords": ["calibrated reflectivities", "16 channels"]},
+    {"q": "Kablosuz ağ cihazının özellikleri neler?", "gold_doc": "Mimari", "keywords": ["WiFi Router"]}
+  ]
+}

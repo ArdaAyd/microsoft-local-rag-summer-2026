@@ -1,0 +1,5 @@
+pdfplumber>=0.11
+openai>=1.0
+sentence-transformers>=3.0
+numpy>=1.24
+streamlit>=1.30

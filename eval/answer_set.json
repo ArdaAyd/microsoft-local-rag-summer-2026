@@ -1,0 +1,57 @@
+{
+  "_note": "Cevap KALITESI eval seti (retrieval degil, uretilen cevabin dogrulugu). answerable: cevapta gecmesi beklenen ayirt edici deger(ler); en az biri gecerse dogru sayilir (substring, NFKC+casefold). unanswerable: corpus'ta GERCEKTEN olmayan ama makul gorunen sorular -> model reddetmeli. Tum beklenen degerler ve tum yokluklar corpus'ta programatik dogrulandi.",
+  "answerable": [
+    {"q": "Araca gaz/throttle komutu hangi ROS topic'i ile gönderilir?",
+     "expected": ["RC_THRT_DATA"],
+     "why": "KullaniciDokumani s.7: 'Topic: /beemobs/RC_THRT_DATA'"},
+
+    {"q": "Aracın geri vites lambası hangi sinyal ile kontrol edilir?",
+     "expected": ["RC_ReverseLight"],
+     "why": "KullaniciDokumani s.7: 'RC_ReverseLight : ... geri vites lambasinin kontrolu'"},
+
+    {"q": "Aracın dingil açıklığı en az kaç olmalı?",
+     "expected": ["130"],
+     "why": "Sartname s.32 teknik kontrol tablosu: 'Dingil Açıklığı > 130'"},
+
+    {"q": "Direksiyonu sola çevirmek için hangi veri aralığı kullanılır?",
+     "expected": ["127"],
+     "why": "KullaniciDokumani s.8: 'Range : 0 – 127 : Direksiyonu Sola'"},
+
+    {"q": "Araçta hangi LiDAR sensörü kullanılıyor?",
+     "expected": ["VLP16", "VLP-16", "Velodyne"],
+     "why": "GenelBilgilendirme s.3 spec tablosu: 'LIDAR Sensörü : Velodyne Lidar VLP16'"},
+
+    {"q": "Araçta hangi kamera kullanılıyor?",
+     "expected": ["ZED2", "ZED 2"],
+     "why": "GenelBilgilendirme s.3: 'Kamera : ZED2 Stereo'"},
+
+    {"q": "Araçta hangi GPS/IMU birimi kullanılıyor?",
+     "expected": ["MTI-680", "MTI 680", "XSENS"],
+     "why": "GenelBilgilendirme s.3: 'GPS/IMU : XSENS MTI-680'"},
+
+    {"q": "Sistemde hangi Advantech endüstriyel Box PC modeli kullanılıyor?",
+     "expected": ["MIC-770"],
+     "why": "Mimari s.4: 'Advantech MIC-770V3H Endüstriyel Box PC'"},
+
+    {"q": "Yeşil ışıkta 5 saniye içinde harekete geçen araç kaç puan alır?",
+     "expected": ["40"],
+     "why": "Sartname s.28: '5 sn içinde harekete geçti 40'"},
+
+    {"q": "Park bölgesi noktasına ulaştıktan sonra araç kaç dakika içinde park etmelidir?",
+     "expected": ["3 dakika", "3 dk"],
+     "why": "Sartname s.28: '3 dakika içinde kurallara uygun park eden araç başarılı'"}
+  ],
+  "unanswerable": [
+    {"q": "Araçta kaç adet hava yastığı var?",
+     "why": "'hava yastığı'/'airbag' corpus'ta 0 chunk — makul ama yok"},
+
+    {"q": "Aracın 0-100 km/s hızlanma süresi kaç saniyedir?",
+     "why": "'0-100' corpus'ta 0 chunk — makul ama yok"},
+
+    {"q": "Aracın bagaj hacmi kaç litredir?",
+     "why": "'bagaj hacmi' corpus'ta 0 chunk — makul ama yok"},
+
+    {"q": "İstanbul'un nüfusu kaç milyondur?",
+     "why": "tamamen alan disi kontrol sorusu"}
+  ]
+}

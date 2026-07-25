@@ -1,0 +1,28 @@
+{
+  "_aciklama": "RAG retrieval eval seti. gold_doc: dogru dokuman (config.py'deki kisa ad). keywords: o dokumanin ilgili chunk'inda gecmesi beklenen ayirt edici substring(ler); en az biri gecerse chunk-hit sayilir. Ground truth corpus'tan turetildi ve validate edildi (bkz. run_eval.py validation fazi).",
+  "questions": [
+    {"q": "Dinamik engel nedir ve araç dinamik engel karşısında ne yapmalı?", "gold_doc": "Sartname", "keywords": ["Dinamik engel", "Dinamik Engeller"]},
+    {"q": "Şerit ihlali kaç tekerlek şerit dışına çıkınca sayılır?", "gold_doc": "Sartname", "keywords": ["Şerit ihlali", "2 tekerlek"]},
+    {"q": "Aracın dingil açıklığı en az kaç olmalı?", "gold_doc": "Sartname", "keywords": ["Dingil Açıklığı"]},
+    {"q": "Yarışma pisti / parkur nasıl tanımlanıyor?", "gold_doc": "Sartname", "keywords": ["Yarışma Pisti", "Parkur"]},
+    {"q": "Tünelden geçme görevinde araçtan ne beklenir?", "gold_doc": "Sartname", "keywords": ["Tünel"]},
+    {"q": "Uzaktan Müdahale Sistemi (UMS) nedir?", "gold_doc": "Sartname", "keywords": ["Uzaktan Müdahale", "UMS"]},
+    {"q": "Kırmızı ışıkta durma ile ilgili kural nedir?", "gold_doc": "Sartname", "keywords": ["Işık Kurallarına Uyum", "Kırmızı ışık", "Kırmızı Işık"]},
+    {"q": "Statik engelden sakınmak için araç ne yapmalı?", "gold_doc": "Sartname", "keywords": ["Statik Engel"]},
+    {"q": "Araca gaz/throttle komutu hangi ROS topic'i ile gönderilir?", "gold_doc": "KullaniciDokumani", "keywords": ["RC_THRT_DATA"]},
+    {"q": "Aracın geri vites lambası hangi sinyalle kontrol edilir?", "gold_doc": "KullaniciDokumani", "keywords": ["RC_ReverseLight"]},
+    {"q": "Direksiyonu sola çevirmek için hangi veri aralığı kullanılır?", "gold_doc": "KullaniciDokumani", "keywords": ["Direksiyonu Sola"]},
+    {"q": "Advantech PC'ye SSH ve SFTP ile nasıl erişilir?", "gold_doc": "KullaniciDokumani", "keywords": ["SSH", "SFTP"]},
+    {"q": "Docker image yapısı SFTP ile Advantech'e nasıl aktarılır?", "gold_doc": "KullaniciDokumani", "keywords": ["Docker Image Yapısının", "SFTP ile Advantech"]},
+    {"q": "Joystick ile uzaktan kontrol nasıl yapılır?", "gold_doc": "KullaniciDokumani", "keywords": ["Joystick"]},
+    {"q": "BEE1 aracının teknik özellikleri neler?", "gold_doc": "GenelBilgilendirme", "keywords": ["BEE1", "TEKNİK ÖZELLİKLER"]},
+    {"q": "BEE1'in elektrik şemasında elektronik direksiyon sürücüsü (EPS) nedir?", "gold_doc": "GenelBilgilendirme", "keywords": ["EPS Motor Control", "ELEKTRİK ŞEMASI"]},
+    {"q": "BEE1 aracının boyutları ve görünümü nasıl?", "gold_doc": "GenelBilgilendirme", "keywords": ["BOYUTLAR ve GÖRÜNÜM", "BEE1"]},
+    {"q": "BEE1'de LED pozisyon/sinyal donanımı var mı?", "gold_doc": "GenelBilgilendirme", "keywords": ["LED pozisyon"]},
+    {"q": "Sistemde hangi endüstriyel Box PC (Advantech MIC modeli) kullanılıyor?", "gold_doc": "Mimari", "keywords": ["MIC-770"]},
+    {"q": "Yazılım mimarisinde ROS node yapısı / yazılım katmanları nasıl?", "gold_doc": "Mimari", "keywords": ["ROS node mimarisi", "Yazılım Katmanları"]},
+    {"q": "Stereo kamera hakkında ne bilgi veriliyor?", "gold_doc": "Mimari", "keywords": ["Stereo Kamera"]},
+    {"q": "Kullanılan LiDAR'ın teknik ölçüm özellikleri (kanal sayısı vb.) neler?", "gold_doc": "Mimari", "keywords": ["calibrated reflectivities", "16 channels"]},
+    {"q": "WiFi router özellikleri neler?", "gold_doc": "Mimari", "keywords": ["WiFi Router"]}
+  ]
+}

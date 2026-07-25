@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# Generated vector database — rebuild with:  cd src && python ingest.py
+data/corpus.db
+
+# Source PDFs — official Teknofest documents, not redistributed here (see data/README.md)
+data/*.pdf
+
+# Instructor's internal planning document — not for publication
+docs/*.docx
+
+# Virtual environments / caches
+.venv/
+venv/
+env/
+
+# Claude Code local tooling/settings (leaks home path, not part of the deliverable)
+.claude/
+
+# Internal dev notes — kept locally, not published
+HANDOFF.md

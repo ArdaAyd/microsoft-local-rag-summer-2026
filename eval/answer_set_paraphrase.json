@@ -1,0 +1,50 @@
+{
+  "_note": "answer_set.json'un PARAPHRASE varyanti. Beklenen degerler (expected) BIREBIR AYNI; sadece sorularin ifadesi degisti — dokumanin kendi terimleri kasitli olarak kullanilmadi. Amac: 'gercek kullanici gibi sorulunca cevap hala dogru mu?' Cevaplanamaz sorular zaten kullanici dilinde oldugu icin aynen korundu.",
+  "answerable": [
+    {"q": "Araca nasıl gaz veririm, hangi mesajı yayınlamam gerek?",
+     "expected": ["RC_THRT_DATA"],
+     "why": "orijinal: 'gaz/throttle komutu hangi ROS topic'i ile gönderilir?'"},
+
+    {"q": "Geri giderken yanan lambayı nasıl kontrol ederim?",
+     "expected": ["RC_ReverseLight"],
+     "why": "orijinal: 'geri vites lambası hangi sinyal ile kontrol edilir?'"},
+
+    {"q": "Ön ve arka tekerlekler arasındaki mesafe en az ne kadar olmalı?",
+     "expected": ["130"],
+     "why": "orijinal: 'dingil açıklığı en az kaç olmalı?'"},
+
+    {"q": "Tekerlekleri sol tarafa çevirmek için hangi değeri göndermeliyim?",
+     "expected": ["127"],
+     "why": "orijinal: 'direksiyonu sola çevirmek için hangi veri aralığı?'"},
+
+    {"q": "Araçta hangi lazer tarayıcı var?",
+     "expected": ["VLP16", "VLP-16", "Velodyne"],
+     "why": "orijinal: 'hangi LiDAR sensörü kullanılıyor?'"},
+
+    {"q": "Görüntü almak için araçta hangi cihaz var?",
+     "expected": ["ZED2", "ZED 2"],
+     "why": "orijinal: 'hangi kamera kullanılıyor?'"},
+
+    {"q": "Konum ve yönelim bilgisini hangi cihazdan alıyoruz?",
+     "expected": ["MTI-680", "MTI 680", "XSENS"],
+     "why": "orijinal: 'hangi GPS/IMU birimi kullanılıyor?'"},
+
+    {"q": "Araçta hangi bilgisayar var?",
+     "expected": ["MIC-770"],
+     "why": "orijinal: 'hangi Advantech endüstriyel Box PC modeli?'"},
+
+    {"q": "Işık yeşile döndükten hemen sonra kalkarsam kaç puan kazanırım?",
+     "expected": ["40"],
+     "why": "orijinal: 'yeşil ışıkta 5 saniye içinde harekete geçen araç kaç puan alır?'"},
+
+    {"q": "Park yerine vardıktan sonra ne kadar sürede park etmem gerekiyor?",
+     "expected": ["3 dakika", "3 dk"],
+     "why": "orijinal: 'park bölgesi noktasına ulaştıktan sonra kaç dakika içinde?'"}
+  ],
+  "unanswerable": [
+    {"q": "Araçta kaç adet hava yastığı var?", "why": "corpus'ta yok (dogrulandi)"},
+    {"q": "Aracın 0-100 km/s hızlanma süresi kaç saniyedir?", "why": "corpus'ta yok (dogrulandi)"},
+    {"q": "Aracın bagaj hacmi kaç litredir?", "why": "corpus'ta yok (dogrulandi)"},
+    {"q": "İstanbul'un nüfusu kaç milyondur?", "why": "alan disi kontrol"}
+  ]
+}
